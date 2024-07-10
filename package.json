@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/frontend",
+    "packages/viewer"
+  ],
+  "scripts": {
+    "dev": "yarn workspaces foreach -piv -j unlimited run dev",
+    "build": "yarn workspaces foreach -ptv run build",
+    "start": "yarn workspaces foreach -ptv run start"
+  }
+}
